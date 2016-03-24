@@ -12,5 +12,5 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = [
-    url(r'^$', login_required(IndexView.as_view()), name='amos_index')
+    url(r'^$', IndexView.as_view(), name='amos_index')
 ]
